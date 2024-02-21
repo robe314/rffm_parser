@@ -12,7 +12,9 @@ def get_infantiles(webs):
             equipo_visitante = partido['equipo_visitante']
             fecha = partido['fecha']
             hora = partido['hora']
+            goles_casa = partido['goles_casa']
+            goles_visitante = partido['goles_visitante']
             if "ADEPO PALOMERAS" in equipo_local or "ADEPO PALOMERAS" in equipo_visitante:
-                lista.append({"Fecha" : fecha, "Hora" : hora, "Local" : equipo_local, "Visitante" : equipo_visitante})
+                lista.append({"Fecha" : fecha, "Hora" : hora, "Local" : equipo_local, "L" :goles_casa, "V" :goles_visitante, "Visitante" : equipo_visitante})
 
     return lista
