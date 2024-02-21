@@ -1,6 +1,4 @@
 import telebot
-from text_dict import text
-from horarios import get_horarios
 from text_clasificacion import text_clasificacion
 from text_horario import text_horario
 
