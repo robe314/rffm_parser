@@ -9,7 +9,7 @@ bot = telebot.TeleBot("6822504022:AAH2z4sNp4GJBRy8YHXmRCBvGnrQfbOlecs")
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-  bot.reply_to(message, "Escribe /horario, /resultados, /clasificacion, /infantiles o /cuartos")
+  bot.reply_to(message, "Bot para mostrar informacion del Adepo Infantil A. Escribe /horario, /resultados, /clasificacion, /infantiles o /cuartos")
 
 @bot.message_handler(commands=['horario','Horario'])
 def echo_all(message):
