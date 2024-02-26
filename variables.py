@@ -6,6 +6,9 @@ url_clasificacion = "https://www.rffm.es/competicion/clasificaciones?temporada=1
 # URL del calendario de la competicion y grupo a seguir
 url_calendario = "https://www.rffm.es/competicion/calendario?temporada=19&tipojuego=1&competicion=17145553&grupo=17145567"
 
+# URL de los resultados de la ultima jornada de la competicion y grupo a seguir
+url_resultados = "https://www.rffm.es/competicion/resultados-y-jornadas?temporada=19&tipojuego=1&competicion=17145553&grupo=17145567&jornada="
+
 # URLs del calendario de los equipos a seguir
 url_seguidos = ["https://www.rffm.es/competicion/calendario?temporada=19&tipojuego=1&competicion=17145553&grupo=17145567",
         "https://www.rffm.es/competicion/calendario?temporada=19&tipojuego=1&competicion=17145553&grupo=17145568",
