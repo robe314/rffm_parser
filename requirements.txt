@@ -1,0 +1,8 @@
+operator
+telebot
+urllib.request
+json
+BeautifulSoup
+tabulate
+pandas
+dataframe_image
