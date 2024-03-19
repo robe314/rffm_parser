@@ -1,8 +1,8 @@
 from variables import url_calendario
-from text_dict import text
-from resultados import get_resultados
+from dict2text import dict2text
+from dict_resultados import dict_resultados
 
 def text_resultados():
-    myresultados=get_resultados(url_calendario)
-    texto=text(myresultados)
+    myresultados=dict_resultados(url_calendario)
+    texto=dict2text(myresultados)
     return texto

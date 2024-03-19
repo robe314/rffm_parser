@@ -1,8 +1,8 @@
 from variables import url_calendario
-from text_dict import text
-from horarios import get_horarios
+from dict2text import dict2text
+from dict_horarios import dict_horarios
 
 def text_horario():
-    myhorario=get_horarios(url_calendario)
-    texto=text(myhorario)
+    myhorario=dict_horarios(url_calendario)
+    texto=dict2text(myhorario)
     return texto

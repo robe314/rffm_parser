@@ -1,6 +1,6 @@
 from web_parser import get_dict
 
-def get_resultados(url):
+def dict_resultados(url):
     mydict=get_dict(url)
     currentround = int(mydict['props']['pageProps']['currentRound'])-1
     jornada = mydict['props']['pageProps']['calendar']['rounds'][currentround]['equipos']

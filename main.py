@@ -1,5 +1,0 @@
-import ver_infantiles
-import ver_horarios
-import ver_resultados
-import ver_clasificacion
-import ver_cuartos

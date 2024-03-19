@@ -1,6 +1,6 @@
 from web_parser import get_dict
 
-def get_horarios(url):
+def dict_horarios(url):
     lista = []
     mydict=get_dict(url)
     currentround = int(mydict['props']['pageProps']['currentRound'])-1

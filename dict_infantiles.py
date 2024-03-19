@@ -1,6 +1,6 @@
 from web_parser import get_dict
 
-def get_infantiles(webs):
+def dict_infantiles(webs):
     lista = []
     for url in webs:
         mydict=get_dict(url)
@@ -16,5 +16,4 @@ def get_infantiles(webs):
             goles_visitante = partido['goles_visitante']
             if "ADEPO PALOMERAS" in equipo_local or "ADEPO PALOMERAS" in equipo_visitante:
                 lista.append({"Fecha" : fecha, "Hora" : hora, "Local" : equipo_local, "L" :goles_casa, "V" :goles_visitante, "Visitante" : equipo_visitante})
-
     return lista
