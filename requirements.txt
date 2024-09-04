@@ -1,8 +1,6 @@
-operator
 telebot
-urllib.request
-json
-BeautifulSoup
+requests
+BeautifulSoup4
 tabulate
 pandas
 dataframe_image
