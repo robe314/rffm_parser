@@ -11,7 +11,7 @@ bot = telebot.TeleBot("6822504022:AAH2z4sNp4GJBRy8YHXmRCBvGnrQfbOlecs")
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-  bot.reply_to(message, "Bot para mostrar informacion del Adepo Infantil A. Escribe /horario, /resultados, /clasificacion, /seguidos o /coeficientes")
+  bot.reply_to(message, "Bot para mostrar informacion del Adepo Cadete B. Escribe /horario, /resultados, /clasificacion, /seguidos o /coeficientes")
 
 @bot.message_handler(commands=['horario','Horario'])
 def echo_all(message):
@@ -29,7 +29,7 @@ def echo_all(message):
 def echo_all(message):
   bot.reply_to(message, dict2text(dict_seguidos(url_seguidos)))
 
-@bot.message_handler(commands=['coeficientes','Coeficientes'])
+@bot.message_handler(commands=['coeficiente','Coeficiente'])
 def echo_all(message):
   bot.reply_to(message, dict2text(dict_coeficiente(url_coeficiente)))
 
