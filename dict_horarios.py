@@ -1,4 +1,5 @@
 from web_parser import get_dict
+from variables import myequipo
 
 def dict_horarios(url):
     lista = []
@@ -11,6 +12,6 @@ def dict_horarios(url):
             equipo_visitante = jornada[a]['equipos'][b]['equipo_visitante']
             fecha = jornada[a]['equipos'][b]['fecha']
             hora = jornada[a]['equipos'][b]['hora']
-            if equipo_local == "ADEPO PALOMERAS 'A'" or equipo_visitante == "ADEPO PALOMERAS 'A'":
+            if equipo_local == myequipo or equipo_visitante == myequipo:
                 lista.append({"Fecha" : fecha, "Hora" : hora, "Local" : equipo_local, "Visitante" : equipo_visitante})
     return lista

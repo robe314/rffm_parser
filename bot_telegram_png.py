@@ -3,15 +3,15 @@ from variables import *
 from dict2png import dict2png
 from dict_clasificacion import dict_clasificacion
 from dict_horarios import dict_horarios
-from dict_cuartos import dict_cuartos
-from dict_infantiles import dict_infantiles
+from dict_coeficiente import dict_coeficiente
+from dict_seguidos import dict_seguidos
 from dict_resultados import dict_resultados
 
 bot = telebot.TeleBot("6822504022:AAH2z4sNp4GJBRy8YHXmRCBvGnrQfbOlecs")
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-  bot.reply_to(message, "Bot para mostrar informacion del Adepo Infantil A. Escribe /horario, /resultados, /clasificacion, /infantiles o /cuartos")
+  bot.reply_to(message, "Bot para mostrar informacion del Adepo Infantil A. Escribe /horario, /resultados, /clasificacion, /seguidos o /coeficientes")
 
 @bot.message_handler(commands=['horario','Horario'])
 def echo_all(message):
@@ -31,15 +31,15 @@ def echo_all(message):
   photo = open('borrar.png', 'rb')
   bot.send_photo(13336098,photo)
 
-@bot.message_handler(commands=['infantiles','Infantiles'])
+@bot.message_handler(commands=['seguidos','Seguidos'])
 def echo_all(message):
-  dict2png(dict_infantiles(url_seguidos))
+  dict2png(dict_seguidos(url_seguidos))
   photo = open('borrar.png', 'rb')
   bot.send_photo(13336098,photo)
 
-@bot.message_handler(commands=['cuartos','Cuartos'])
+@bot.message_handler(commands=['coeficientes','Coeficientes'])
 def echo_all(message):
-  dict2png(dict_cuartos(url_cuartos))
+  dict2png(dict_coeficiente(url_coeficiente))
   photo = open('borrar.png', 'rb')
   bot.send_photo(13336098,photo)
 

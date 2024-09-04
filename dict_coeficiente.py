@@ -1,12 +1,12 @@
 import operator
 from web_parser import get_dict
 
-def dict_cuartos(webs):
+def dict_coeficiente(webs,puesto):
     lista = []
     grupo=1
     for url in webs:
         mydict=get_dict(url)
-        cuarto=mydict['props']['pageProps']['standings']['clasificacion'][3]
+        cuarto=mydict['props']['pageProps']['standings']['clasificacion'][puesto-1]
         nombre=cuarto["nombre"]
         jugados=int(cuarto["jugados"])
         puntos=int(cuarto["puntos"])

@@ -2,9 +2,8 @@ from web_parser import get_dict
 
 def dict_resultados(url):
     mydict=get_dict(url)
-    currentround = int(mydict['props']['pageProps']['currentRound'])-1
-    jornada = mydict['props']['pageProps']['calendar']['rounds'][currentround]['equipos']
+    jornada = mydict['props']['pageProps']['calendario']['partidos']
     myjornada=[]
     for i in jornada:
-        myjornada.append({"Local":i["equipo_local"],"L":i["goles_casa"],"V":i["goles_visitante"],"Visitante":i["equipo_visitante"],"Fecha":i["fecha"],"Hora":i["hora"]})
+        myjornada.append({"Local":i["Nombre_equipo_local"],"L":i["Goles_casa"],"V":i["Goles_visitante"],"Visitante":i["Nombre_equipo_visitante"],"Fecha":i["fecha"],"Hora":i["hora"]})
     return myjornada
