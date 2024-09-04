@@ -15,22 +15,22 @@ def send_welcome(message):
 
 @bot.message_handler(commands=['horario','Horario'])
 def echo_all(message):
-  bot.reply_to(message, dict2text(dict_horarios))
+  bot.reply_to(message, dict2text(dict_horarios(url_calendario)))
 
 @bot.message_handler(commands=['clasificacion','Clasificacion'])
 def echo_all(message):
-  bot.reply_to(message, dict2text(dict_clasificacion))
+  bot.reply_to(message, dict2text(dict_clasificacion(url_clasificacion)))
 
 @bot.message_handler(commands=['resultados','Resultados'])
 def echo_all(message):
-  bot.reply_to(message, dict2text(dict_resultados))
+  bot.reply_to(message, dict2text(dict_resultados(url_resultados)))
 
 @bot.message_handler(commands=['seguidos','Seguidos'])
 def echo_all(message):
-  bot.reply_to(message, dict2text(dict_seguidos))
+  bot.reply_to(message, dict2text(dict_seguidos(url_seguidos)))
 
 @bot.message_handler(commands=['coeficientes','Coeficientes'])
 def echo_all(message):
-  bot.reply_to(message, dict2text(dict_coeficiente))
+  bot.reply_to(message, dict2text(dict_coeficiente(url_coeficiente)))
 
 bot.infinity_polling()
