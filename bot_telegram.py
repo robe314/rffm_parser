@@ -31,6 +31,6 @@ def echo_all(message):
 
 @bot.message_handler(commands=['coeficiente','Coeficiente'])
 def echo_all(message):
-  bot.reply_to(message, dict2text(dict_coeficiente(url_coeficiente)))
+  bot.reply_to(message, dict2text(dict_coeficiente(url_coeficiente,4)))
 
 bot.infinity_polling()
