@@ -27,7 +27,7 @@ def echo_all(message):
 
 @bot.message_handler(commands=['resultados','Resultados'])
 def echo_all(message):
-  dict2png(dict_resultados(url_calendario))
+  dict2png(dict_resultados(url_resultados))
   photo = open('borrar.png', 'rb')
   bot.send_photo(13336098,photo)
 
@@ -37,9 +37,9 @@ def echo_all(message):
   photo = open('borrar.png', 'rb')
   bot.send_photo(13336098,photo)
 
-@bot.message_handler(commands=['coeficientes','Coeficientes'])
+@bot.message_handler(commands=['coeficiente','Coeficiente'])
 def echo_all(message):
-  dict2png(dict_coeficiente(url_coeficiente))
+  dict2png(dict_coeficiente(url_coeficiente, puesto))
   photo = open('borrar.png', 'rb')
   bot.send_photo(13336098,photo)
 

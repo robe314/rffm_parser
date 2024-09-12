@@ -4,3 +4,4 @@ BeautifulSoup4
 tabulate
 pandas
 dataframe_image
+playwright
