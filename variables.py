@@ -17,6 +17,7 @@ url_resultados = "https://www.rffm.es/competicion/resultados-y-jornadas?temporad
 
 # URLs del calendario de los equipos a seguir
 url_seguidos = ["https://www.rffm.es/competicion/resultados-y-jornadas?temporada=20&tipojuego=1&competicion=21433776&grupo=21433782&jornada=",
+        "https://www.rffm.es/competicion/resultados-y-jornadas?temporada=20&tipojuego=1&competicion=21433793&grupo=21433829&jornada=",
         "https://www.rffm.es/competicion/resultados-y-jornadas?temporada=20&tipojuego=1&competicion=21433767&grupo=21433772&jornada="]
 
 # URLs de las clasificaciones de la competicion a seguir para calcular el coeficiente de los equipos que ocupan un determinado puesto
