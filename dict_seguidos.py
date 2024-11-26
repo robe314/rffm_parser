@@ -4,7 +4,7 @@ def dict_seguidos(webs):
     lista = []
     for url in webs:
         mydict=get_dict(url)
-        jornada = mydict['props']['pageProps']['calendario']['partidos']
+        jornada = mydict['props']['pageProps']['results']['partidos']
         
         for partido in jornada:
             equipo_local = partido['Nombre_equipo_local']
